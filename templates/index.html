@@ -7,243 +7,7 @@
     <meta name="color-scheme" content="light">
     <title>{{ info.name }} — Котячий розплідник Ediscaprise</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <style>
-        .navbar {
-            width: 100%;
-            background: #fff;
-            background-image: url("{{ url_for('static', filename='wood.png') }}");
-            background-size: repeat;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-            display: flex;
-            align-items: center;
-            padding: 0 40px;
-            height: 60px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
-
-        .navbar .brand {
-            font-weight: bold;
-            font-size: 18px;
-            color: #333;
-            flex: 0 0 auto;
-        }
-
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-            margin-left: auto;
-            margin-right: 10vw;
-        }
-
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: #007BFF;
-            font-size: 16px;
-            transition: color 0.2s;
-        }
-
-        .navbar .nav-links a:hover {
-            color: #0056b3;
-        }
-
-        body {
-            background-image: url("{{ url_for('static', filename='marks.png') }}");
-            background-repeat: repeat;
-            background-size: cover;
-            background-color: #ffffff !important;;
-            color: #000000 !important;
-            padding-top: 100px;
-            margin: 0;
-            min-height: 100vh;
-            
-        }
-
-        .centered-row-wrapper {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-            margin-bottom: 0;
-        }
-
-        .centered-row {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 40px;
-            width: 100%;
-            max-width: 1400px;
-            background: transparent;
-        }
-
-        .carousel-container,
-        .card {
-            pointer-events: auto;
-        }
-
-        .carousel-container {
-            width: 100%;
-            max-width: 780px !important;
-            margin: 0;
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            background: #fff;
-        }
-
-        .carousel-slide {
-            display: flex;
-            transition: transform 0.5s;
-            width: 100%;
-        }
-
-        .carousel-slide img {
-            width: 100%;
-            min-width: 100%;
-            max-width: 100%;
-            height: 416px;
-            object-fit: cover;
-            border-radius: 12px;
-            flex-shrink: 0;
-            display: block;
-        }
-
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.7);
-            border: none;
-            font-size: 28px;
-            cursor: pointer;
-            padding: 0 15px;
-            border-radius: 50%;
-            z-index: 2;
-            transition: background 0.2s;
-        }
-
-        .carousel-btn:hover {
-            background: #eee;
-        }
-
-        .carousel-btn.left {
-            left: 10px;
-        }
-
-        .carousel-btn.right {
-            right: 10px;
-        }
-
-        .carousel-dots {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        .carousel-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: #bbb;
-            border-radius: 50%;
-            margin: 0 4px;
-            cursor: pointer;
-        }
-
-        .carousel-dot.active {
-            background: #007BFF;
-        }
-
-        .about-card-fixed {
-            max-width: 350px;
-            min-width: 260px;
-            margin: 0;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-        }
-
-        .contacts p {
-            margin: 5px 0;
-            display: block;
-            align-items: center; /* выравнивает по вертикали */
-            gap: 8px; /* отступ между иконкой и текстом */
-        }
-
-        .contacts a {
-            color: #007BFF;
-            text-decoration: none;
-        } 
-
-        p {
-            font-size: 14px;
-            color: #030303 !important;
-            background-color: #ffffff !important;;
-            color: #000000 !important;
-            
-        }
-
-        @media (max-width: 1300px) {
-            .centered-row {
-                max-width: 98vw;
-                gap: 20px;
-            }
-        }
-
-        @media (max-width: 1100px) {
-            .centered-row {
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-            }
-
-            .centered-row-wrapper {
-                margin-top: 30px;
-            }
-
-            body {
-                padding-top: 120px;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .carousel-container {
-                max-width: 98vw !important;
-            }
-
-            .carousel-slide img {
-                height: 234px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                height: auto;
-                padding: 10px 10px;
-            }
-
-            .navbar .nav-links {
-                margin: 10px 0 0 0;
-                gap: 15px;
-                margin-right: 0;
-            }
-
-            .about-card-fixed {
-                max-width: 98vw;
-                min-width: unset;
-            }
-
-            .centered-row-wrapper {
-                margin-top: 20px;
-            }
-        }
-    </style>
+    
 </head>
 
 <body>
@@ -277,13 +41,13 @@
                 <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Фото розплідника"
                     style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:15px;">
                 <h1>{{ info.name }}</h1>
-                <h2>Котячий розплідник "Ediscaprise"</h2>
+                <h2><span>Котячий розплідник "Ediscaprise"</span></h2>
                 <p>{{ info.about }}</p>
                 <div class="contacts" id="contacts">
-                    <p><span>📧</span> <a href="mailto:{{ info.email }}">{{ info.email }}</a></p>
-                    <p><span>📱</span> {{ info.phone }}</p>
-                    <p><span>🌐</span> <a href="https://facebook.com/ваш_ник" target="_blank">{{ info.facebook }}</a></p>
-                    <p><span>📸</span> <a href="https://instagram.com/ваш_ник" target="_blank">{{ info.instagram }}</a></p>
+                    <p><span>📧 <a href="mailto:{{ info.email }}">{{ info.email }}</a></span></p>
+                    <p><span>📱 {{ info.phone }}</span></p>
+                    <p><span>🌐 <a href="https://facebook.com/ваш_ник" target="_blank">{{ info.facebook }}</a></span></p>
+                    <p><span>📸 <a href="https://instagram.com/ваш_ник" target="_blank">{{ info.instagram }}</a></span></p>
                 </div>
             </div>
         </div>
@@ -293,24 +57,29 @@
     <!-- Блоки с текстом ниже карусели и about-card -->
     <div style="max-width: 900px; margin: 40px auto 60px auto; padding: 0 16px; clear: both;">
         <section id="about" style="margin-top:40px;">
-            <h2>Про розплідник</h2>
-            <p>
+            <h2 class="outline"><span>Про розплідник</span></h2>
+            <p class="outline">
+                <span>
                 Наш котячий розплідник "Ediscaprise" займається розведенням породистих котів з любов'ю та турботою. Ми
                 гарантуємо здоров'я, соціалізацію та чудовий характер кожного кошеняти.
+                </span>
             </p>
         </section>
         <section id="breed" style="margin-top:40px;">
-            <h2>Про породу</h2>
-            <p>
-                Ми спеціалізуємось на британських короткошерстих, шотландських висловухих та мейн-кунах. Всі наші
+            <h2 class="outline"><span>Про породу</span></h2>
+            <p class="outline">
+                <span>Ми спеціалізуємось на британських короткошерстих, шотландських висловухих та мейн-кунах. Всі наші
                 тварини мають родовід та відповідають стандартам породи.
+                </span>
             </p>
         </section>
         <section id="terms" style="margin-top:40px;">
-            <h2>Умови продажу</h2>
-            <p>
+            <h2 class="outline"><span>Умови продажу</span></h2>
+            <p class="outline">
+                <span>
                 Кошенята передаються новим власникам вакцинованими, з ветеринарним паспортом та договором
                 купівлі-продажу. Ми завжди готові допомогти з порадами по догляду.
+                </span>
             </p>
         </section>
     </div>
