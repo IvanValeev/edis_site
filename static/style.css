@@ -53,7 +53,15 @@ body {
 /* span{
     background-color: #ffffff;
 } */
-
+.brand{
+    color: black;
+        background-color: transparent;
+        text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px 1px 0 white,
+            1px 1px 0 white;
+}
 .outline {
     color: black;
     background-color: transparent;
