@@ -241,6 +241,14 @@ h2 {
         margin-right: 0;
     }
 
+    nav a {
+        padding: 5px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
     .about-card-fixed {
         max-width: 98vw;
         min-width: unset;
