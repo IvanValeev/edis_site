@@ -23,7 +23,7 @@
 
 .navbar .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     margin-left: auto;
     margin-right: 10vw;
 }
@@ -50,9 +50,7 @@ body {
     min-height: 100vh;
 }
 
-/* span{
-    background-color: #ffffff;
-} */
+
 .brand{
     color: black;
         background-color: transparent;
@@ -191,12 +189,7 @@ body {
     text-decoration: none;
 }
 
-/* p {
-    font-size: 14px;
-    color: #030303 !important;
-    background-color: #ffffff !important;
-    color: #000000 !important;
-} */
+
 
 h2 {
     color: #000000 !important;
@@ -244,7 +237,7 @@ h2 {
 
     .navbar .nav-links {
         margin: 10px 0 0 0;
-        gap: 15px;
+        gap: 10px;
         margin-right: 0;
     }
 
