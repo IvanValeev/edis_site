@@ -256,4 +256,9 @@ h2 {
     .centered-row-wrapper {
         margin-top: 20px;
     }
+
+    .outline {
+        color: black;
+        background-color: transparent;
+    }
 }
