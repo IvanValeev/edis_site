@@ -231,34 +231,29 @@ h2 {
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
-        /* переносим элементы в колонку */
-        align-items: flex-start;
-        /* прижимаем к левому краю */
         height: auto;
-        /* убираем фиксированную высоту */
-        padding: 10px 15px;
-        /* уменьшаем отступы */
-    }
-
-    .navbar .brand {
-        margin-bottom: 10px;
-        /* отделяем бренд от ссылок */
+        align-items: flex-start;
+        padding: 10px 10px;
     }
 
     .navbar .nav-links {
-        flex-direction: column;
-        /* ссылки теперь тоже в колонку */
+        margin: 10px 0 0 0;
         gap: 8px;
-        /* меньшее расстояние между ними */
-        margin: 0;
-        /* убираем auto margins */
+        margin-right: 0;
         width: 100%;
-        /* тянем на всю ширину */
     }
 
     .navbar .nav-links a {
         font-size: 14px;
-        /* уменьшаем шрифт */
         padding: 6px 0;
+    }
+
+    .about-card-fixed {
+        max-width: 98vw;
+        min-width: unset;
+    }
+
+    .centered-row-wrapper {
+        margin-top: 20px;
     }
 }
